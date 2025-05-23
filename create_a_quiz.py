@@ -28,6 +28,11 @@ class CollectedData:
 
     def start(self):
         print("Enter as many questions with multiple choices as you want: ")
+        while True:
+            self.AddQuestion()
+            more_question = input("Would you like to add another question? (y/n): ").upper()
+            if more != 'Y':
+
 
 
 

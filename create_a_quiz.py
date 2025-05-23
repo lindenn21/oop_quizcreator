@@ -1,3 +1,5 @@
+import time
+
 class CollectedData:
     def __init__(self, file_name='collected_data.txt'):
         self.file_name = file_name
@@ -31,9 +33,16 @@ class CollectedData:
         while True:
             self.AddQuestion()
             more_question = input("Would you like to add another question? (y/n): ").upper()
-            if more != 'Y':
-
-
+            if more_question != 'Y':
+                print(f"Preparing your quiz in..")
+                for i in range(3, 0, -1):
+                    print(f"{i}")
+                    time.sleep(1)
+                print("Your quiz is ready to be answered! Thank you.")
+                break
+            self.file.close()
+quiz = CollectedData()
+quiz.start()
 
 
 

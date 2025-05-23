@@ -26,6 +26,9 @@ class CollectedData:
         self.file.write(f"D: {choice_d}\n")
         self.file.write(f"{answer}\n")
 
+    def start(self):
+        print("Enter as many questions with multiple choices as you want: ")
+
 
 
 

@@ -1,7 +1,7 @@
 import time
 
 class CollectedData:
-    def __init__(self, file_name='collected_data.txt'):
+    def __init__(self, file_name='collected_data1.txt'):
         self.file_name = file_name
         self.questions = []
         self.file = open(self.file_name, 'w')
@@ -40,7 +40,7 @@ class CollectedData:
                     time.sleep(1)
                 print("Your quiz is ready to be answered! Thank you.")
                 break
-            self.file.close()
+        self.file.close()
 quiz = CollectedData()
 quiz.start()
 

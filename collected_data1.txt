@@ -1,12 +1,18 @@
-Questions: 1
-A: 2
-B: 3
-C: 4
-D: 5
-D
-Questions: hi kish
-A: hi
-B: hello
-C: no
-D: ...
+Questions:  1+1
+A: 1
+B: 2
+C: 3
+D: 4
+B
+Questions: 9+9
+A: 18
+B: 17
+C: 16
+D: 21
+A
+Questions: 5+5
+A: 10
+B: 5
+C: 8
+D: 9
 A

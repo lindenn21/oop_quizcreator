@@ -31,6 +31,7 @@ class QuizCreator:
             else:
                 num += 1
         random.shuffle(self.quiz)
+        self.quiz = quiz
         return self.quiz
 
 

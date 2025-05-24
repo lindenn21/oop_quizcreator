@@ -3,7 +3,7 @@ class QuizCreator:
     def __init__(self, file_name="collected_data1.txt"):
        self.file_name = file_name
 
-    def LoadQuiz(self):
+    def LoadQuestion(self):
         with open("collected_data1.txt", "r") as the_quiz:
             quiz_content = the_quiz.readlines()
 
@@ -14,15 +14,15 @@ class QuizCreator:
             line = quiz_content[num].strip()
             if line.startswith("Questions: "):
                 question = line.strip()
-                a = quiz_content[num + 1].strip()
-                b = quiz_content[num + 2].strip()
-                c = quiz_content[num + 3].strip()
-                d = quiz_content[num + 4].strip()
+                choice_a = quiz_content[num + 1].strip()
+                choice_b = quiz_content[num + 2].strip()
+                choice_c = quiz_content[num + 3].strip()
+                choice_d = quiz_content[num + 4].strip()
                 answer = quiz_content[num + 5].strip().upper()
                 quiz.append({
                     f"question": question,
-                    "choices": {"A": a, "B": b,
-                                "C": c, "D": d},
+                    "choices": {"A":  choice_a, "B":  choice_b,
+                                "C":  choice_c, "D":  choice_d},
                     "correct_answer": answer
                 })
 

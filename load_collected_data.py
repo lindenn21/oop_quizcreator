@@ -2,6 +2,7 @@ import random
 class QuizCreator:
     def __init__(self, file_name="collected_data1.txt"):
        self.file_name = file_name
+       self.quiz = []
 
     def LoadQuestion(self):
         with open("collected_data1.txt", "r") as the_quiz:

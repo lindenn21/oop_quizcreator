@@ -3,6 +3,7 @@ class QuizLoad:
        self.quiz_data = quiz_data
        self.score = 0
 
+
     def PrintQuiz(self):
         question_num = 1
         for item in self.quiz:

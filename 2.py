@@ -8,5 +8,3 @@ class Timer:
             time.sleep(1)
         print("GOODLUCK!!")
 
-quiz = Timer()
-quiz.CountDown()

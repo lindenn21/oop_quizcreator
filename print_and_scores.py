@@ -1,7 +1,7 @@
 class QuizLoad:
     def __init__(self, quiz_data):
        self.quiz_data = quiz_data
-        self.score = 0
+       self.score = 0
 
     def PrintQuiz(self):
         question_num = 1

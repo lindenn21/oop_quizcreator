@@ -22,13 +22,13 @@ class QuizLoad:
             question_num += 1
 
     def Score(self):
-        percent = score / len(quiz) * 100
+        percent = self.score / len(self.quiz) * 100
         passing_score = 75
 
         if percent > passing_score:
-            print(f"Nice! You scored {score}/{len(quiz)}, you passed the quiz!")
+            print(f"Nice! You scored {self.score}/{len(self.quiz)}, you passed the quiz!")
         else:
-            print(f"It's okay! You can do better next time, you scored {score}/{len(quiz)}.")
+            print(f"It's okay! You can do better next time, you scored {self.score}/{len(self.quiz)}.")
 
         print("Thank you for answering!")
 

@@ -1,6 +1,7 @@
 class QuizLoad:
     def __init__(self, quiz_data):
        self.quiz_data = quiz_data
+        self.score = 0
 
     def PrintQuiz(self):
         question_num = 1
@@ -19,5 +20,17 @@ class QuizLoad:
             else:
                 print(f"Sorry! The correct answer is {item['correct_answer']}")
             question_num += 1
+
+    def Score(self):
+        percent = score / len(quiz) * 100
+        passing_score = 75
+
+        if percent > passing_score:
+            print(f"Nice! You scored {score}/{len(quiz)}, you passed the quiz!")
+        else:
+            print(f"It's okay! You can do better next time, you scored {score}/{len(quiz)}.")
+
+        print("Thank you for answering!")
+
 
 
